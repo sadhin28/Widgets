@@ -1,0 +1,19 @@
+ MyAlertDialog(context){
+    return showDialog(
+        context: context,
+        builder:(BuildContext context){
+          return Expanded(
+              child: AlertDialog(
+                title: Text("Alert !"),
+                  content: Text("Do you want to Delate ?"),
+                    actions: [
+                      TextButton(onPressed: (){MySnackBar("Dealte Success", context);
+                       Navigator.of(context).pop();
+                        }, child: Text("Yes")),
+                        TextButton(onPressed: (){Navigator.of(context).pop();}, child: Text("No")),
+                        ],
+              )
+          );
+        }
+
+    );
