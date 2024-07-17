@@ -1,0 +1,4 @@
+  MySnackBar(massage,context){
+    return ScaffoldMessenger.of(context).showSnackBar(SnackBar(content:Text(massage))
+    );
+  }
