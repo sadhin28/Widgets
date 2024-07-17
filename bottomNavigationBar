@@ -1,0 +1,20 @@
+   bottomNavigationBar: BottomNavigationBar(
+        currentIndex: 0,
+        elevation: 20,
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.home),label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.message),label: "Message"),
+          BottomNavigationBarItem(icon: Icon(Icons.person),label: "Profile"),
+        ],
+        onTap: (int index){
+          if(index==0){
+              MySnackBar("I am home bottom menue",context);
+          }
+          if(index==1){
+            MySnackBar("I am Message bottom menu", context);
+          }
+          if(index==2){
+            MySnackBar("I am profile bottom menu", context);
+          }
+        }
+      ),
