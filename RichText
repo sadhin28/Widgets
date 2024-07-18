@@ -1,0 +1,29 @@
+      body:RichText(
+        text: TextSpan(
+          style: TextStyle(
+              color: Colors.green,
+               fontSize: 20,
+          ),
+          children: <TextSpan>[
+            TextSpan(text: 'Hellow',),
+            TextSpan(text: 'World',style: TextStyle(
+              fontSize: 40,
+              color: Colors.amberAccent,
+              fontWeight: FontWeight.bold,
+            )),
+            TextSpan(text: 'Wrlcome To',style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 43,
+              color: Colors.blueGrey,
+              fontStyle:FontStyle.italic,
+            )),
+            TextSpan(text: 'Flutter',style: TextStyle(
+              fontStyle:FontStyle.italic,
+              fontWeight: FontWeight.bold,
+              color: Colors.lightBlue,
+              fontSize: 34,
+
+            ))
+          ],
+        ),
+      ),
